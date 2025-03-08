@@ -1,2 +1,3 @@
 # kklibrary
-R package with custom functions for my personal use
+
+A collection of various R functions that are unlikely to be helpful to anybody else but me.
