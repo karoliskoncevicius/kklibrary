@@ -15,8 +15,8 @@ redoRDS(file, ...)
 an R object.
 }
 \description{
-Uses "redo" build system to check if the specified .rds file needs to be
-rebuild, rebuilds it if necessary and then reads the file.
+Uses "redo" build system to check if the specified .rds file is out of date,
+rebuilds it if necessary and then reads the file.
 }
 \details{
 Technically the function first invokes a "redo-ifchange" system command
