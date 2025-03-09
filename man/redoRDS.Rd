@@ -20,7 +20,7 @@ rebuilds it if necessary and then reads the file.
 }
 \details{
 Technically the function first invokes a "redo-ifchange" system command
-and then reads the specified .rds file using `readRDS()`.
+and then reads the specified .rds file using \code{readRDS()}.
 For an example of "redo" implementation see \href{http://www.goredo.cypherpunks.su}.
 }
 \author{
