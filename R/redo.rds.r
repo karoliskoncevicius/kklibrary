@@ -14,7 +14,7 @@
 #'
 #' @author Karolis Koncevičius
 #' @export
-redoRDS <- function(file, ...) {
+redo.rds <- function(file, ...) {
   system(paste("redo-ifchange", file))
   readRDS(file, ...)
 }
