@@ -15,9 +15,10 @@
 #' reflecting its distance (in standard deviations) from the rest of the group.
 #'
 #' When \code{groups} argument is provided the IAC procedure is performed for
-#' each group separately. When no observations fall below the specified z-score
-#' threshold the z-score values returned by the current iteration will be the
-#' same as those returned by the previous iteration.
+#' each group separately. NA values are returned for groups with less than 3 members.
+#' When no observations fall below the specified z-score threshold the z-score
+#' values returned by the current iteration will be the same as those returned
+#' by the previous one.
 #'
 #' @param x a matrix where features are represented by rows and observations by columns.
 #' @param groups optional vector of group membership for each column of \code{x}.
@@ -43,7 +44,7 @@ iac <- function(x, groups, zcutoff = -3, niter = 3) {
   dists <- matrix(nrow = niter, ncol = ncol(x))
   rownames(dists) <- paste0("iteration", 1:nrow(dists))
   colnames(dists) <- colnames(x)
-  for(g in unique(na.omit(groups))) {
+  for(g in names(which(table(groups) > 2))) {
     inds <- which(groups == g)
     cors <- cor(x[, inds], use = "complete.obs")
     diag(cors) <- NA

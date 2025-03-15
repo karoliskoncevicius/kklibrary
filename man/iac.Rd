@@ -35,9 +35,10 @@ observations will still be displayed and transformed into a z-score,
 reflecting its distance (in standard deviations) from the rest of the group.
 
 When \code{groups} argument is provided the IAC procedure is performed for
-each group separately. When no observations fall below the specified z-score
-threshold the z-score values returned by the current iteration will be the
-same as those returned by the previous iteration.
+each group separately. NA values are returned for groups with less than 3 members.
+When no observations fall below the specified z-score threshold the z-score
+values returned by the current iteration will be the same as those returned
+by the previous one.
 }
 \examples{
 # a toy dataset
