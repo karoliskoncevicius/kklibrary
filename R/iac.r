@@ -40,7 +40,10 @@
 #' @author Karolis Koncevičius
 #' @export
 iac <- function(x, groups, zcutoff = -3, niter = 3) {
-  if(missing(groups)) groups <- rep("all", ncol(x))
+  if(missing(groups))
+    groups <- rep("all", ncol(x))
+  if(length(groups) != ncol(x))
+    stop("iac: length of 'groups' must be equal to the number of columns in 'x'")
   dists <- matrix(nrow = niter, ncol = ncol(x))
   rownames(dists) <- paste0("iteration", 1:nrow(dists))
   colnames(dists) <- colnames(x)
