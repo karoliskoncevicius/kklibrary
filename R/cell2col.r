@@ -25,16 +25,16 @@ cell2col <- function(x) {
             baso  = "#C4A484",
             nk    = "#B276B2",
             tcell = "blue",
-            tcd4  = "dodgerblue2",
+            tcd4  = "dodgerblue",
             tcd4n = "deepskyblue",
-            tcd4m = "dodgerblue3",
+            tcd4m = "dodgerblue",
             tcd8  = "skyblue3",
             tcd8n = "lightblue2",
-            tcd8m = "steelblue4",
+            tcd8m = "skyblue3",
             treg  = "cyan4",
             bcell = "green3",
             bn    = "lawngreen",
-            bm    = "forestgreen"
+            bm    = "green3"
             )
 
   x <- tolower(x)
