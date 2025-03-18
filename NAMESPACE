@@ -1,3 +1,4 @@
+export(cell2col)
 export(iac)
 export(read.soft)
 export(redo)
