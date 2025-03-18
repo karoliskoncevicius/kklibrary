@@ -2,7 +2,7 @@
 #'
 #' Converts cell type names to colors.
 #' Currently the color palette is hard-coded within the function.
-#' Black color is returned for undefined an missing cell types.
+#' Black color is used for undefined and missing cell types.
 #'
 #' @param x a vector of cell type names.
 #'

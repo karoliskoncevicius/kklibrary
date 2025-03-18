@@ -15,7 +15,7 @@ a vector of colors for each element in x
 \description{
 Converts cell type names to colors.
 Currently the color palette is hard-coded within the function.
-Black color is returned for undefined an missing cell types.
+Black color is used for undefined and missing cell types.
 }
 \examples{
 cells <- c("blood", "pbmc", "bcell", "bn", "neu", "mix", "mono")
