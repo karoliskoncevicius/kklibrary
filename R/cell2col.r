@@ -15,26 +15,26 @@
 #' @author Karolis Koncevičius
 #' @export
 cell2col <- function(x) {
-  cols <- c(blood = "tomato3",
-            wb    = "tomato3",
-            pbmc  = "salmon2",
+  cols <- c(blood = "darkred",
+            wb    = "darkred",
+            pbmc  = "tomato3",
             gran  = "darkorange1",
             neu   = "#FAA43A",
             mono  = "#DECF3F",
             eos   = "#FFF804",
             baso  = "#C4A484",
-            nk    = "#B276B2",
+            nk    = "mediumvioletred",
             tcell = "blue",
             tcd4  = "dodgerblue",
             tcd4n = "deepskyblue",
-            tcd4m = "dodgerblue",
-            tcd8  = "skyblue3",
-            tcd8n = "lightblue2",
-            tcd8m = "skyblue3",
-            treg  = "cyan4",
+            tcd4m = "steelblue",
+            treg  = "skyblue",
+            tcd8  = "purple",
+            tcd8n = "mediumpurple1",
+            tcd8m = "slateblue3",
             bcell = "green3",
             bn    = "lawngreen",
-            bm    = "green3"
+            bm    = "springgreen4"
             )
 
   x <- tolower(x)
