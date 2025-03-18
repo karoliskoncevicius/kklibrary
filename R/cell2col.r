@@ -33,8 +33,8 @@ cell2col <- function(x) {
             tcd8n = "mediumpurple1",
             tcd8m = "slateblue3",
             bcell = "green3",
-            bn    = "lawngreen",
-            bm    = "springgreen4"
+            bn    = "lightgreen",
+            bm    = "#60BD68"
             )
 
   x <- tolower(x)
