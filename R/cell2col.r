@@ -27,7 +27,7 @@ cell2col <- function(x) {
             tcell = "blue",
             tcd4  = "dodgerblue",
             tcd4n = "deepskyblue",
-            tcd4m = "steelblue",
+            tcd4m = "steelblue3",
             treg  = "skyblue",
             tcd8  = "purple",
             tcd8n = "mediumpurple1",
