@@ -15,6 +15,7 @@
 #' @author Karolis Koncevičius
 #' @export
 cell2col <- function(x) {
+  if(is.null(x)) return(NULL)
   cols <- c(blood = "darkred",
             wb    = "darkred",
             pbmc  = "tomato3",
