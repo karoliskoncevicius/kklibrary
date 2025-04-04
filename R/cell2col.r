@@ -16,26 +16,29 @@
 #' @export
 cell2col <- function(x) {
   if(is.null(x)) return(NULL)
-  cols <- c(blood = "darkred",
-            wb    = "darkred",
-            pbmc  = "tomato3",
-            gran  = "darkorange1",
-            neu   = "#FAA43A",
-            mono  = "#DECF3F",
-            eos   = "#FFF804",
-            baso  = "#C4A484",
-            nk    = "mediumvioletred",
-            tcell = "blue",
-            tcd4  = "dodgerblue",
-            tcd4n = "deepskyblue",
-            tcd4m = "steelblue3",
-            treg  = "skyblue",
-            tcd8  = "purple",
-            tcd8n = "mediumpurple1",
-            tcd8m = "slateblue3",
-            bcell = "green3",
-            bn    = "lightgreen",
-            bm    = "#60BD68"
+  cols <- c(blood  = "darkred",
+            wb     = "darkred",
+            pbmc   = "tomato3",
+            gran   = "darkorange1",
+            neu    = "#FAA43A",
+            mono   = "#DECF3F",
+            eos    = "#FFF804",
+            baso   = "#C4A484",
+            nk     = "mediumvioletred",
+            tcell  = "blue",
+            tcd4   = "dodgerblue",
+            tcd4n  = "deepskyblue",
+            tcd4m  = "steelblue3",
+            treg   = "skyblue",
+            tcd8   = "purple",
+            tcd8n  = "mediumpurple1",
+            tcd8m  = "slateblue3",
+            bcell  = "green3",
+            bn     = "lightgreen",
+            bm     = "#60BD68",
+
+            neuron = "gray60",
+            glia   = "#8D4B08"
             )
 
   x <- tolower(x)
