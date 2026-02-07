@@ -1,5 +1,6 @@
 export(cell2col)
 export(iac)
+export(oscline)
 export(read.soft)
 export(redo)
 export(sex2col)

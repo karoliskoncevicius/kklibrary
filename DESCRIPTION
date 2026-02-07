@@ -1,6 +1,6 @@
 Package: kklibrary
 Title: Functions for personal use
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Karolis", "Koncevičius", email = "karolis.koncevicius@gmail.com", role = c("aut", "cre"))
 Maintainer: Karolis Koncevičius <karolis.koncevicius@gmail.com>
 Description: A collection of various functions that are unlikely to be helpful to anybody else but me.
