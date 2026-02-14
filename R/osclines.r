@@ -11,7 +11,7 @@
 #' @details
 #' The curve is based on 1000 points placed between \code{x0} and \code{x1}.
 #'
-#' Requried oscillation parameters:\cr
+#' Required oscillation parameters:\cr
 #' 1. mesor - mean value of the curve.\cr
 #' 2. acrophase - timing of the oscillation peak (maximum).\cr
 #' 3. amplitude - half the difference between peak and trough.\cr
